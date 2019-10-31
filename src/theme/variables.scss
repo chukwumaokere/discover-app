@@ -3,6 +3,16 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --level-1: #1b2137; 
+  --level-2: #2d3041;
+  --level-2-button-2: #272638;
+  --level-2-button-1: #4f86fd;
+  --level-2-icon-button: #55549a;
+  --level-2-selected: #313c5c;
+
+  --ion-background-color: var(--level-1);
+  --ion-text-color: #90939c;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;

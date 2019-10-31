@@ -1,16 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
+<ion-header class="level-2">
+  <ion-toolbar class="level-2">
+    <!--  <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
+    </ion-buttons> -->
+    <!-- <ion-title>
+      Discover
+    </ion-title> -->
+    <span class="flex">
+      <ion-searchbar class="level-2 no-box-shadow" placeholder="Search for songs, artists, etc..."></ion-searchbar>
+      <ion-button color="tertiary" buttonType="button" shape="round" size="" type="button" strong class="button">Sign Up</ion-button>
+      <ion-button buttonType="button" shape="round" size="" type="button" strong class="button">Log In</ion-button>
+    </span>
+    
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
+   <!--  <ion-card class="welcome-card">
       <img src="/assets/shapes.svg" alt="" />
       <ion-card-header>
         <ion-card-subtitle>Get Started</ion-card-subtitle>
@@ -40,5 +46,5 @@
         <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
         <ion-label>Theme Your App</ion-label>
       </ion-item>
-    </ion-list>
+    </ion-list> -->
 </ion-content>

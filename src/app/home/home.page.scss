@@ -2,3 +2,50 @@
   max-height: 35vh;
   overflow: hidden;
 }
+.button{
+  font-size: .66em;
+  text-transform: none;
+}
+
+.level-2{
+  --background: var(--level-2) !important;
+  background: var(--level-2) !important;
+}
+.flex{
+  display: flex;
+}
+:root{
+
+}
+.searchbar-input, .sc-ion-searchbar{
+  --color: #fff !important;
+  color: #fff !important;
+}
+.sc-ion-searchbar-md-h{
+  --placeholder-color: #fff;
+  --color: #fff !important;
+  color: #fff !important;
+}
+.searchbar-search-icon.sc-ion-searchbar-md, .searchbar-search-icon.sc-ion-searchbar-ios {
+  color: #fff !important;
+  --color: #fff !important;
+
+}
+
+/* .searchbar-input, .sc-ion-searchbar-md {
+  border: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+} */
+
+.searchbar-input.sc-ion-searchbar-md {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+input.searchbar-input.sc-ion-searchbar-md {
+  box-shadow: none !important;
+}
+.no-box-shadow > div > input {
+  box-shadow: none !important;
+}

@@ -1,24 +1,24 @@
 <ion-app>
-  <ion-split-pane>
-    <ion-menu type="reveal">
-      <!-- <ion-header>
-        <ion-toolbar>
-          <ion-title></ion-title>
+  <ion-split-pane when="(min-width: 768px)">
+    <ion-menu class="level-2" type="reveal">
+       <ion-header>
+        <ion-toolbar class="level-2">
+          <ion-title class="title">Discover</ion-title>
         </ion-toolbar>
-      </ion-header> -->
-      <ion-content>
-        <ion-list>
+      </ion-header> 
+      <ion-content class="level-2">
+        <ion-list class="level-2">
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" class="level-2">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
               <ion-label>
-                {{p.title}}
+                {{p.title}} 
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
       </ion-content>
     </ion-menu>
-    <ion-router-outlet main></ion-router-outlet>
+    <ion-router-outlet main contentId="main"></ion-router-outlet>
   </ion-split-pane>
 </ion-app>

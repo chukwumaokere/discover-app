@@ -1,0 +1,35 @@
+ion-menu{
+    //max-width: 10% !important;
+}
+
+.split-pane-md, .split-pane-ios, .split-pane, .split-pane-visible {
+    border: none;
+    --border: none;
+}
+.split-pane-visible>.split-pane-side {
+    min-width: 220px;
+    max-width: 15%;
+    border-right: var(--border);
+    border-left: 0;
+}
+.toolbar-title, .title {
+    text-overflow: unset !important;
+    white-space: unset !important;
+}
+.title-ios.title-default{
+   padding-left: 0px !important;
+}
+.title-md.title-default {
+   padding-left: 16px !important;
+}
+
+.level-2{
+    --background: var(--level-2) !important;
+    background: var(--level-2) !important;
+}
+
+.searchbar-input, .sc-ion-searchbar-md {
+    border: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
