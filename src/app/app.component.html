@@ -7,8 +7,10 @@
         </ion-toolbar>
       </ion-header> 
       <ion-content class="level-2">
-        <ion-list class="level-2">
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+        <ion-list class="level-2" lines="none">
+
+          <ion-item class="level-2"> <ion-label class="subtitle ion-padding">Main Menu</ion-label> </ion-item>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of mainMenu">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" class="level-2">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
               <ion-label>
@@ -16,6 +18,17 @@
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
+
+          <ion-item class="level-2"> <ion-label class="subtitle ion-padding">Your Music</ion-label> </ion-item>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of yourMusic">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" class="level-2">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}} 
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
         </ion-list>
       </ion-content>
     </ion-menu>

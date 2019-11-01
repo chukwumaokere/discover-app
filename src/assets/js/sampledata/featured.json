@@ -1,7 +1,11 @@
 {
     "featured":[
         {
-
+            "id": 1,
+            "artwork": "",
+            "title": "",
+            "artist": "",
+            "year": ""
         },
         {
 

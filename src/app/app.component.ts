@@ -10,18 +10,56 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  public appPages = [
+  public mainMenu = [
     {
-      title: 'Home',
+      title: 'Feed',
       url: '/home',
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
+      title: 'Songs',
+      url: '/songs',
+      icon: 'musical-notes'
+    },
+    {
+      title: 'Albums',
+      url: '/albums',
+      icon: 'folder-open'
+    },
+    {
+      title: 'Artists',
+      url: '/artists',
+      icon: 'person'
+    },
+    {
+      title: 'My music',
+      url: '/mymusic',
+      icon: 'musical-note'
+    },
+    {
+      title: 'Radio',
+      url: '/radio',
+      icon: 'radio'
+    },
   ];
+  public yourMusic = [
+    {
+      title: 'Favorites',
+      url: '/favorites',
+      icon: 'heart'
+    },
+    {
+      title: 'Playlist',
+      url: '/playlist',
+      icon: 'list'
+    },
+    {
+      title: 'Downloads',
+      url: '/downloads',
+      icon: 'download'
+    },
+  ];
+
 
   constructor(
     private platform: Platform,

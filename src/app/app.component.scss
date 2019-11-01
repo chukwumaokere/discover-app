@@ -8,7 +8,7 @@ ion-menu{
 }
 .split-pane-visible>.split-pane-side {
     min-width: 220px;
-    max-width: 15%;
+    max-width: 10%;
     border-right: var(--border);
     border-left: 0;
 }
@@ -36,4 +36,16 @@ ion-menu{
   
 ion-icon.md.hydrated {
     color: hsla(231, 18%, 75%, 1);
+}
+
+.subtitle{
+    margin-top: 11px;
+    margin-bottom: 10px;
+    --margin-top: 11px;
+    --margin-bottom: 10px;
+    color: hsla(231, 18%, 75%, 1);
+    --color: hsla(231, 18%, 75%, 1);
+    padding-left:0px !important;
+    --padding-left: 0px !important;
+    --ion-padding-left: 0px !important;
 }
